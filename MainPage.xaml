@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label 
+                Text=" Seleccione el auto que desee utilizar"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="16"
+                HorizontalOptions="Center" />
+
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Peugeot 508"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="End"
+
+                ImageSource="peugeot.jpeg"
+                HeightRequest="200"
+            />
+            <Label x:Name="sedanLabel" Text="" />
+
+            <Button
+                x:Name="CounterBtn1"
+                Text="PickUp"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked1"
+                HorizontalOptions="End" 
+                ImageSource="ford.jpeg"
+                HeightRequest="200"
+                />
+            <Label x:Name="pickUpLabel" Text="" />
+
+            <Button
+                x:Name="CounterBtn2"
+                Text="SUV"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked2"
+                HorizontalOptions="End"
+                ImageSource="wrangler.jpeg"
+                HeightRequest="200"
+                />
+            <Label x:Name="suvLabel" Text="" />
+            <Button
+                x:Name="CounterBtn3"
+                Text="Traccion 4x4"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked3"
+                HorizontalOptions="End"
+                ImageSource="land.jpeg"
+                HeightRequest="200"
+                />
+            <Label x:Name="cuatroPorCuatroLabel" Text="" />
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
